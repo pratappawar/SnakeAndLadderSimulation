@@ -12,7 +12,9 @@ public class SnakeLadderBuilder {
 		int B_posTemp;
 		System.out.println("!!**Welcome to Snake and Ladder Simulation**!!");
 		
-
+		rollDice++;     //taking status for dice rolling
+		int Dice_A=(int)(Math.floor(Math.random()*10)%6 + 1);
+		System.out.println("Getting Dice number:"+Dice_A);
 
 	}
 
