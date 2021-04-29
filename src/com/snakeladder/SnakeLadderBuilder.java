@@ -64,6 +64,7 @@ public class SnakeLadderBuilder {
 			}
 
 		}
+		System.out.println("Number of Time Die Rolled: " + No_Of_Die);
 
 	}
 
