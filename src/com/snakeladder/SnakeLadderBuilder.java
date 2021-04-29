@@ -12,9 +12,8 @@ public class SnakeLadderBuilder {
 		int playerA_pos=0;
 		int playerB_pos=0;
 		System.out.println("!!!Welcome to Snake Ladder Simulation!!!");
-		
+		while(playerA_pos<FINAL_POS && playerB_pos<FINAL_POS ) {
 		int Die = (int)(Math.random()*6) + 1;
-		
 		No_Of_Die++;
 		System.out.println("Number got on Dice: "+Die);
 		
@@ -31,7 +30,7 @@ public class SnakeLadderBuilder {
 			}
 			else {
 				isPlayer=true;
-				playerA_pos=playerA_pos+Die;
+				playerB_pos=playerB_pos+Die;
 				System.out.println("Position of the player B: "+playerB_pos );
 			}
 			break;
@@ -39,12 +38,12 @@ public class SnakeLadderBuilder {
 		case 2:           //Snake
 			if(isPlayer) {
 				isPlayer=false;
-				playerA_pos=playerA_pos-Die;
+				playerA_pos-=Die;
 				System.out.println("Position of the player A: "+playerA_pos );
 			}
 			else {
 				isPlayer=true;
-				playerA_pos=playerA_pos-Die;
+				playerB_pos-=Die;
 				System.out.println("Position of the player B : "+playerB_pos );
 			}
 			break;
@@ -59,11 +58,10 @@ public class SnakeLadderBuilder {
 				System.out.println("The player-->B Skip 1 Chance position is: "+playerB_pos );
 			}
 			break;
-			
-			
-			
 		}
+		System.out.println("Number of Die Rolled: "+No_Of_Die);
 		
 	}
+ }
 
 }
