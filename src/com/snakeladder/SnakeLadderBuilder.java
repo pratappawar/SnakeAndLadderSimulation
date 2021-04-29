@@ -65,6 +65,15 @@ public class SnakeLadderBuilder {
 
 		}
 		System.out.println("Number of Time Die Rolled: " + No_Of_Die);
+		System.out.println("----------------------------------------");
+		
+		///Checking who won the Game
+		
+		if(playerA_pos==FINAL_POS) {
+			System.out.println("***********Player A won the Game************");
+		}else {
+			System.out.println("***********Player B won the Game************");
+		}
 
 	}
 
