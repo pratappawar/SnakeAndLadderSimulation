@@ -9,10 +9,11 @@ public class SnakeLadderBuilder {
 
 		int playerA_pos = 0;
 		int playerB_pos = 0;
+		int no_Of_Die = 0;
 		System.out.println("!!!Welcome to Snake Ladder Simulation!!!");
 		System.out.println("--------------------------------------------");
 		while (playerA_pos < FINAL_POS && playerB_pos < FINAL_POS) {
-
+			no_Of_Die++;
 			int Die = (int) (Math.random() * 6) + 1;
 			System.out.println("Number got on Dice: " + Die);
 
@@ -40,5 +41,7 @@ public class SnakeLadderBuilder {
 				break;
 			}
 		}
+		System.out.println("Number of Time Die Rolled: " + no_Of_Die);
+		System.out.println("----------------------------------------");
 	}
 }
