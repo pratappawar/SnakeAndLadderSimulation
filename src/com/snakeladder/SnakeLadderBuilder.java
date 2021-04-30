@@ -22,12 +22,15 @@ public class SnakeLadderBuilder {
 
 			switch (CheckOpt) {
 			case 1: // Ladder
-				playerA_pos = playerA_pos + Die;
+				if ((playerA_pos + Die) <= FINAL_POS)
+					playerA_pos = playerA_pos + Die;
 				System.out.println("Position of the player A: " + playerA_pos);
 				System.out.println("--------------------------------------------");
 				break;
 			case 2: // Snake
 				playerA_pos -= Die;
+				if ((playerA_pos - Die) < 0)
+					playerA_pos = 0;
 				System.out.println("Position of the player A: " + playerA_pos);
 				System.out.println("--------------------------------------------");
 				break;
